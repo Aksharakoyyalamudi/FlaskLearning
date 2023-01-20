@@ -1,0 +1,49 @@
+{% extends "base.html" %}{% block title %}login{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="mainbox" style="margin: 5%; padding: 5%;">
+            <div class="header">
+                <h1>Login into Account</h1>
+            </div>
+            <form method="POST">
+                <table>
+                    <tr>
+                        <th style="width: 50%;"><label for="email"> Email* </label></th>
+                    </tr>
+                    <tr>
+                        <td><input id="email" name = "email" placeholder="enter your registered email" value=""></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="width: 50%;"><label for="Password"> Password* </label></th>
+                    </tr>
+                    <tr>
+                        <td><input id="Password" name = "password" type=password placeholder="enter your password" value=""></td>
+                        </td>
+                    </tr>
+                    <tr style="display: flex; justify-content: center;">
+                        <th><input type="submit" style="margin: 10%;"></th>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+<!-- <script>
+    // document.getElementById("email").value = sessionStorage.getItem('param1');
+    // document.getElementById("Password").value = sessionStorage.getItem('param2');
+
+    function verifypassword(event) {
+        event.preventDefault();
+        if (document.getElementById("email").value === sessionStorage.getItem('param1')
+            && document.getElementById("Password").value === sessionStorage.getItem('param2')) {
+            console.log(document.getElementById("email").value, document.getElementById("Password").value)
+
+            window.location = "classes.html";
+        }
+
+    }
+</script> -->
+{% endblock %}
